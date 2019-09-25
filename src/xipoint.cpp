@@ -38,13 +38,13 @@ namespace xi
         _y += ySh;
     }
 
-    void Point::shift(const Point &pt)
+    void Point::shift(const Point& pt)
     {
         _x += pt.getX();
         _y += pt.getY();
     }
 
-    double Point::dist(const Point &other)
+    double Point::dist(const Point& other)
     {
         return std::sqrt(std::pow(_x - other.getX(), 2)
                          + std::pow(_y - other.getY(), 2));
@@ -76,6 +76,7 @@ namespace xi
     PointArray::PointArray()
     {
         _arr = nullptr;
+        _size = 0;
     }
 
     PointArray::PointArray(const Point points[], Uint n)
@@ -89,7 +90,7 @@ namespace xi
         }
     }
 
-    PointArray::PointArray(const xi::PointArray &pv)
+    PointArray::PointArray(const xi::PointArray& pv)
     {
         _arr = new Point[pv._size];
         _size = pv._size;
@@ -105,14 +106,13 @@ namespace xi
         delete[] _arr;
     }
 
-    void PointArray::append(const Point &pt)
+    void PointArray::append(const Point& pt)
     {
         resize(_size + 1);
-        _arr[_size] = pt;
-        ++_size;
+        _arr[_size++] = pt;
     }
 
-    void PointArray::insert(const Point &pt, Uint pos)
+    void PointArray::insert(const Point& pt, Uint pos)
     {
         if (pos >= _size)
         {
@@ -120,7 +120,7 @@ namespace xi
             return;;
         }
 
-        PointArray *temp = new PointArray(_arr, _size);
+        PointArray* temp = new PointArray(_arr, _size);
         _arr[pos] = pt;
 
         resize(++_size);
@@ -176,7 +176,7 @@ namespace xi
         return _size;
     }
 
-    Point *PointArray::get(xi::PointArray::Uint pos)
+    Point* PointArray::get(xi::PointArray::Uint pos)
     {
         if (pos >= _size)
         {
@@ -186,7 +186,7 @@ namespace xi
         return &_arr[pos];
     }
 
-    const Point *PointArray::get(xi::PointArray::Uint pos) const
+    const Point* PointArray::get(xi::PointArray::Uint pos) const
     {
         if (pos >= _size)
         {
@@ -201,18 +201,17 @@ namespace xi
         if (n == _size)
         {
             return;
-
         }
 
-        Point *temp = new Point[n];
+        Point* temp = new Point[n];
 
         for (int i = 0; i < std::min(n, _size); ++i)
         {
             temp[i] = _arr[i];
         }
 
-        _arr = temp;
+        delete[] _arr;
 
-        delete[] temp;
+        _arr = temp;
     }
 }
