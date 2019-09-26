@@ -19,107 +19,201 @@
 namespace xi
 {
 
-    class Point
+    Point::Point(int x, int y)
     {
-    protected:
-        int _x, _y;
+        _x = x;
+        _y = y;
+    }
 
-    public:
-        Point(int x = 0, int y = 0)
-        {
-            _x = x;
-            _y = y;
-        }
 
-    public:
-        void shift(int shf)
-        {
-            _x += shf;
-            _y += shf;
-        }
-
-        void shift(int xSh, int ySh)
-        {
-            _x += xSh;
-            _y += ySh;
-        }
-
-        void shift(const Point &pt)
-        {
-            _x += pt.getX();
-            _y += pt.getY();
-        }
-
-        double dist(const Point &other)
-        {
-            return std::sqrt(std::pow(_x - other.getX(), 2)
-                             + std::pow(_y - other.getY(), 2));
-        }
-
-    public:
-        int getX() const
-        {
-            return _x;
-        }
-
-        int getY() const
-        {
-            return _y;
-        }
-
-        void setX(int x)
-        {
-            _x = x;
-        }
-
-        void setY(int y)
-        {
-            _y = y;
-        }
-    };
-
-    class PointArray
+    void Point::shift(int shf)
     {
-    public:
-        typedef unsigned int Uint;
+        _x += shf;
+        _y += shf;
+    }
 
-    protected:
-        Point *_arr;
-        Uint _size;
+    void Point::shift(int xSh, int ySh)
+    {
+        _x += xSh;
+        _y += ySh;
+    }
 
-        // НЕ РЕАЛИЗОВАНО
-        void resize(Uint n)
+    void Point::shift(const Point& pt)
+    {
+        _x += pt.getX();
+        _y += pt.getY();
+    }
+
+    double Point::dist(const Point& other) const
+    {
+        return std::sqrt(std::pow(_x - other.getX(), 2)
+                         + std::pow(_y - other.getY(), 2));
+    }
+
+
+    int Point::getX() const
+    {
+        return _x;
+    }
+
+    int Point::getY() const
+    {
+        return _y;
+    }
+
+    void Point::setX(int x)
+    {
+        _x = x;
+    }
+
+    void Point::setY(int y)
+    {
+        _y = y;
+    }
+
+    typedef unsigned int Uint;
+
+    PointArray::PointArray()
+    {
+        _arr = nullptr;
+        _size = 0;
+    }
+
+    PointArray::PointArray(const Point points[], Uint n)
+    {
+        _arr = new Point[n];
+        _size = n;
+
+        for (int i = 0; i < n; ++i)
         {
+            _arr[i] = points[i];
+        }
+    }
 
+    PointArray::PointArray(const xi::PointArray& pv)
+    {
+        _arr = new Point[pv._size];
+        _size = pv._size;
+
+        for (int i = 0; i < pv._size; ++i)
+        {
+            _arr[i] = *(pv.get(i));
+        }
+    }
+
+    PointArray::~PointArray()
+    {
+        delete[] _arr;
+    }
+
+    void PointArray::append(const Point& pt)
+    {
+        resize(_size + 1);
+        _arr[_size++] = pt;
+    }
+
+    void PointArray::insert(const Point& pt, Uint pos)
+    {
+        if (pos >= _size)
+        {
+            append(pt);
+            return;;
         }
 
-    public:
-        PointArray()
+        PointArray* temp = new PointArray(_arr, _size);
+        _arr[pos] = pt;
+
+        resize(++_size);
+
+        for (int i = pos + 1; i < _size; ++i)
         {
-            _arr = nullptr;
+            _arr[i] = *(temp->get(i));
         }
 
-        PointArray(const Point points[], Uint n)
-        {
-            _arr = new Point[n];
-            _size = n;
+        delete[] temp;
+    }
 
-            for (int i = 0; i < n; ++i)
-            {
-                _arr[i] = points[i];
-            }
+    void PointArray::remove(xi::PointArray::Uint pos)
+    {
+        if (pos >= _size)
+        {
+            return;;
         }
 
-        PointArray(const PointArray &pv)
+        if (pos == _size - 1)
         {
-            _arr = new Point[pv.getSize()];
-            _size = pv.getSize();
-
-            for (int i = 0; i < pv.getSize(); ++i)
-            {
-                _arr[i] = pv.get(i);
-            }
+            resize(_size - 1);
+            return;
         }
-    };
 
+        for (int i = pos; i < _size - 1; ++i)
+        {
+            _arr[i] = _arr[i + 1];
+        }
+
+        resize(_size - 1);
+    }
+
+    void PointArray::clear()
+    {
+        delete[] _arr;
+        _arr = nullptr;
+        _size = 0;
+    }
+
+    double PointArray::computePath() const
+    {
+        double sum = 0;
+
+        for (int i = 0; i < _size - 1; ++i)
+        {
+            sum += _arr[i].dist(_arr[i + 1]);
+        }
+
+        return sum;
+    }
+
+    Uint PointArray::getSize() const
+    {
+        return _size;
+    }
+
+    Point* PointArray::get(xi::PointArray::Uint pos)
+    {
+        if (pos >= _size)
+        {
+            return nullptr;
+        }
+
+        return &_arr[pos];
+    }
+
+    const Point* PointArray::get(xi::PointArray::Uint pos) const
+    {
+        if (pos >= _size)
+        {
+            return nullptr;
+        }
+
+        return &_arr[pos];
+    }
+
+    void PointArray::resize(xi::PointArray::Uint n)
+    {
+        if (n == _size)
+        {
+            return;
+        }
+
+        Point* temp = new Point[n];
+
+        for (int i = 0; i < std::min(n, _size); ++i)
+        {
+            temp[i] = _arr[i];
+        }
+
+        delete[] _arr;
+
+        _arr = temp;
+    }
 }

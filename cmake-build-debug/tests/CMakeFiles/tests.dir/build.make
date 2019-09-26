@@ -42,10 +42,10 @@ RM = "C:\Program Files\JetBrains\CLion 2019.1.3\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Shurka\Desktop\C++\HSE\task1_point
+CMAKE_SOURCE_DIR = C:\Users\Shurka\Desktop\C++\HSE\task1_point_old
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Shurka\Desktop\C++\HSE\task1_point\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include tests/CMakeFiles/tests.dir/depend.make
@@ -59,72 +59,72 @@ include tests/CMakeFiles/tests.dir/flags.make
 tests/CMakeFiles/tests.dir/point_test.cpp.obj: tests/CMakeFiles/tests.dir/flags.make
 tests/CMakeFiles/tests.dir/point_test.cpp.obj: tests/CMakeFiles/tests.dir/includes_CXX.rsp
 tests/CMakeFiles/tests.dir/point_test.cpp.obj: ../tests/point_test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Shurka\Desktop\C++\HSE\task1_point\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tests/CMakeFiles/tests.dir/point_test.cpp.obj"
-	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point\cmake-build-debug\tests && C:\MinGW\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tests.dir\point_test.cpp.obj -c C:\Users\Shurka\Desktop\C++\HSE\task1_point\tests\point_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tests/CMakeFiles/tests.dir/point_test.cpp.obj"
+	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\cmake-build-debug\tests && C:\MinGW\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tests.dir\point_test.cpp.obj -c C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\tests\point_test.cpp
 
 tests/CMakeFiles/tests.dir/point_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tests.dir/point_test.cpp.i"
-	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point\cmake-build-debug\tests && C:\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Shurka\Desktop\C++\HSE\task1_point\tests\point_test.cpp > CMakeFiles\tests.dir\point_test.cpp.i
+	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\cmake-build-debug\tests && C:\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\tests\point_test.cpp > CMakeFiles\tests.dir\point_test.cpp.i
 
 tests/CMakeFiles/tests.dir/point_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tests.dir/point_test.cpp.s"
-	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point\cmake-build-debug\tests && C:\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Shurka\Desktop\C++\HSE\task1_point\tests\point_test.cpp -o CMakeFiles\tests.dir\point_test.cpp.s
+	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\cmake-build-debug\tests && C:\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\tests\point_test.cpp -o CMakeFiles\tests.dir\point_test.cpp.s
 
 tests/CMakeFiles/tests.dir/point_array_test.cpp.obj: tests/CMakeFiles/tests.dir/flags.make
 tests/CMakeFiles/tests.dir/point_array_test.cpp.obj: tests/CMakeFiles/tests.dir/includes_CXX.rsp
 tests/CMakeFiles/tests.dir/point_array_test.cpp.obj: ../tests/point_array_test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Shurka\Desktop\C++\HSE\task1_point\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object tests/CMakeFiles/tests.dir/point_array_test.cpp.obj"
-	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point\cmake-build-debug\tests && C:\MinGW\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tests.dir\point_array_test.cpp.obj -c C:\Users\Shurka\Desktop\C++\HSE\task1_point\tests\point_array_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object tests/CMakeFiles/tests.dir/point_array_test.cpp.obj"
+	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\cmake-build-debug\tests && C:\MinGW\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tests.dir\point_array_test.cpp.obj -c C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\tests\point_array_test.cpp
 
 tests/CMakeFiles/tests.dir/point_array_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tests.dir/point_array_test.cpp.i"
-	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point\cmake-build-debug\tests && C:\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Shurka\Desktop\C++\HSE\task1_point\tests\point_array_test.cpp > CMakeFiles\tests.dir\point_array_test.cpp.i
+	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\cmake-build-debug\tests && C:\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\tests\point_array_test.cpp > CMakeFiles\tests.dir\point_array_test.cpp.i
 
 tests/CMakeFiles/tests.dir/point_array_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tests.dir/point_array_test.cpp.s"
-	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point\cmake-build-debug\tests && C:\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Shurka\Desktop\C++\HSE\task1_point\tests\point_array_test.cpp -o CMakeFiles\tests.dir\point_array_test.cpp.s
+	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\cmake-build-debug\tests && C:\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\tests\point_array_test.cpp -o CMakeFiles\tests.dir\point_array_test.cpp.s
 
 tests/CMakeFiles/tests.dir/__/src/xipoint.cpp.obj: tests/CMakeFiles/tests.dir/flags.make
 tests/CMakeFiles/tests.dir/__/src/xipoint.cpp.obj: tests/CMakeFiles/tests.dir/includes_CXX.rsp
 tests/CMakeFiles/tests.dir/__/src/xipoint.cpp.obj: ../src/xipoint.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Shurka\Desktop\C++\HSE\task1_point\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object tests/CMakeFiles/tests.dir/__/src/xipoint.cpp.obj"
-	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point\cmake-build-debug\tests && C:\MinGW\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tests.dir\__\src\xipoint.cpp.obj -c C:\Users\Shurka\Desktop\C++\HSE\task1_point\src\xipoint.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object tests/CMakeFiles/tests.dir/__/src/xipoint.cpp.obj"
+	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\cmake-build-debug\tests && C:\MinGW\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tests.dir\__\src\xipoint.cpp.obj -c C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\src\xipoint.cpp
 
 tests/CMakeFiles/tests.dir/__/src/xipoint.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tests.dir/__/src/xipoint.cpp.i"
-	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point\cmake-build-debug\tests && C:\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Shurka\Desktop\C++\HSE\task1_point\src\xipoint.cpp > CMakeFiles\tests.dir\__\src\xipoint.cpp.i
+	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\cmake-build-debug\tests && C:\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\src\xipoint.cpp > CMakeFiles\tests.dir\__\src\xipoint.cpp.i
 
 tests/CMakeFiles/tests.dir/__/src/xipoint.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tests.dir/__/src/xipoint.cpp.s"
-	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point\cmake-build-debug\tests && C:\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Shurka\Desktop\C++\HSE\task1_point\src\xipoint.cpp -o CMakeFiles\tests.dir\__\src\xipoint.cpp.s
+	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\cmake-build-debug\tests && C:\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\src\xipoint.cpp -o CMakeFiles\tests.dir\__\src\xipoint.cpp.s
 
 tests/CMakeFiles/tests.dir/gtest/gtest-all.cc.obj: tests/CMakeFiles/tests.dir/flags.make
 tests/CMakeFiles/tests.dir/gtest/gtest-all.cc.obj: tests/CMakeFiles/tests.dir/includes_CXX.rsp
 tests/CMakeFiles/tests.dir/gtest/gtest-all.cc.obj: ../tests/gtest/gtest-all.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Shurka\Desktop\C++\HSE\task1_point\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object tests/CMakeFiles/tests.dir/gtest/gtest-all.cc.obj"
-	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point\cmake-build-debug\tests && C:\MinGW\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tests.dir\gtest\gtest-all.cc.obj -c C:\Users\Shurka\Desktop\C++\HSE\task1_point\tests\gtest\gtest-all.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object tests/CMakeFiles/tests.dir/gtest/gtest-all.cc.obj"
+	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\cmake-build-debug\tests && C:\MinGW\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tests.dir\gtest\gtest-all.cc.obj -c C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\tests\gtest\gtest-all.cc
 
 tests/CMakeFiles/tests.dir/gtest/gtest-all.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tests.dir/gtest/gtest-all.cc.i"
-	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point\cmake-build-debug\tests && C:\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Shurka\Desktop\C++\HSE\task1_point\tests\gtest\gtest-all.cc > CMakeFiles\tests.dir\gtest\gtest-all.cc.i
+	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\cmake-build-debug\tests && C:\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\tests\gtest\gtest-all.cc > CMakeFiles\tests.dir\gtest\gtest-all.cc.i
 
 tests/CMakeFiles/tests.dir/gtest/gtest-all.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tests.dir/gtest/gtest-all.cc.s"
-	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point\cmake-build-debug\tests && C:\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Shurka\Desktop\C++\HSE\task1_point\tests\gtest\gtest-all.cc -o CMakeFiles\tests.dir\gtest\gtest-all.cc.s
+	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\cmake-build-debug\tests && C:\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\tests\gtest\gtest-all.cc -o CMakeFiles\tests.dir\gtest\gtest-all.cc.s
 
 tests/CMakeFiles/tests.dir/gtest/gtest_main.cc.obj: tests/CMakeFiles/tests.dir/flags.make
 tests/CMakeFiles/tests.dir/gtest/gtest_main.cc.obj: tests/CMakeFiles/tests.dir/includes_CXX.rsp
 tests/CMakeFiles/tests.dir/gtest/gtest_main.cc.obj: ../tests/gtest/gtest_main.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Shurka\Desktop\C++\HSE\task1_point\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object tests/CMakeFiles/tests.dir/gtest/gtest_main.cc.obj"
-	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point\cmake-build-debug\tests && C:\MinGW\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tests.dir\gtest\gtest_main.cc.obj -c C:\Users\Shurka\Desktop\C++\HSE\task1_point\tests\gtest\gtest_main.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object tests/CMakeFiles/tests.dir/gtest/gtest_main.cc.obj"
+	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\cmake-build-debug\tests && C:\MinGW\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tests.dir\gtest\gtest_main.cc.obj -c C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\tests\gtest\gtest_main.cc
 
 tests/CMakeFiles/tests.dir/gtest/gtest_main.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tests.dir/gtest/gtest_main.cc.i"
-	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point\cmake-build-debug\tests && C:\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Shurka\Desktop\C++\HSE\task1_point\tests\gtest\gtest_main.cc > CMakeFiles\tests.dir\gtest\gtest_main.cc.i
+	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\cmake-build-debug\tests && C:\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\tests\gtest\gtest_main.cc > CMakeFiles\tests.dir\gtest\gtest_main.cc.i
 
 tests/CMakeFiles/tests.dir/gtest/gtest_main.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tests.dir/gtest/gtest_main.cc.s"
-	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point\cmake-build-debug\tests && C:\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Shurka\Desktop\C++\HSE\task1_point\tests\gtest\gtest_main.cc -o CMakeFiles\tests.dir\gtest\gtest_main.cc.s
+	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\cmake-build-debug\tests && C:\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\tests\gtest\gtest_main.cc -o CMakeFiles\tests.dir\gtest\gtest_main.cc.s
 
 # Object files for target tests
 tests_OBJECTS = \
@@ -146,8 +146,8 @@ tests/tests.exe: tests/CMakeFiles/tests.dir/build.make
 tests/tests.exe: tests/CMakeFiles/tests.dir/linklibs.rsp
 tests/tests.exe: tests/CMakeFiles/tests.dir/objects1.rsp
 tests/tests.exe: tests/CMakeFiles/tests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Shurka\Desktop\C++\HSE\task1_point\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable tests.exe"
-	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point\cmake-build-debug\tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\tests.dir\link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable tests.exe"
+	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\cmake-build-debug\tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\tests.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 tests/CMakeFiles/tests.dir/build: tests/tests.exe
@@ -155,10 +155,10 @@ tests/CMakeFiles/tests.dir/build: tests/tests.exe
 .PHONY : tests/CMakeFiles/tests.dir/build
 
 tests/CMakeFiles/tests.dir/clean:
-	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point\cmake-build-debug\tests && $(CMAKE_COMMAND) -P CMakeFiles\tests.dir\cmake_clean.cmake
+	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\cmake-build-debug\tests && $(CMAKE_COMMAND) -P CMakeFiles\tests.dir\cmake_clean.cmake
 .PHONY : tests/CMakeFiles/tests.dir/clean
 
 tests/CMakeFiles/tests.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Shurka\Desktop\C++\HSE\task1_point C:\Users\Shurka\Desktop\C++\HSE\task1_point\tests C:\Users\Shurka\Desktop\C++\HSE\task1_point\cmake-build-debug C:\Users\Shurka\Desktop\C++\HSE\task1_point\cmake-build-debug\tests C:\Users\Shurka\Desktop\C++\HSE\task1_point\cmake-build-debug\tests\CMakeFiles\tests.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Shurka\Desktop\C++\HSE\task1_point_old C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\tests C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\cmake-build-debug C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\cmake-build-debug\tests C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\cmake-build-debug\tests\CMakeFiles\tests.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : tests/CMakeFiles/tests.dir/depend
 

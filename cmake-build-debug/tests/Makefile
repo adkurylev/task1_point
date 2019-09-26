@@ -47,10 +47,10 @@ RM = "C:\Program Files\JetBrains\CLion 2019.1.3\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Shurka\Desktop\C++\HSE\task1_point
+CMAKE_SOURCE_DIR = C:\Users\Shurka\Desktop\C++\HSE\task1_point_old
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Shurka\Desktop\C++\HSE\task1_point\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,14 +79,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point\cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Shurka\Desktop\C++\HSE\task1_point\cmake-build-debug\CMakeFiles C:\Users\Shurka\Desktop\C++\HSE\task1_point\cmake-build-debug\tests\CMakeFiles\progress.marks
-	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point\cmake-build-debug && $(MAKE) -f CMakeFiles\Makefile2 tests/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Shurka\Desktop\C++\HSE\task1_point\cmake-build-debug\CMakeFiles 0
+	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\cmake-build-debug\CMakeFiles C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\cmake-build-debug\tests\CMakeFiles\progress.marks
+	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\cmake-build-debug && $(MAKE) -f CMakeFiles\Makefile2 tests/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point\cmake-build-debug && $(MAKE) -f CMakeFiles\Makefile2 tests/clean
+	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\cmake-build-debug && $(MAKE) -f CMakeFiles\Makefile2 tests/clean
 .PHONY : clean
 
 # The main clean target
@@ -96,22 +96,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point\cmake-build-debug && $(MAKE) -f CMakeFiles\Makefile2 tests/preinstall
+	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\cmake-build-debug && $(MAKE) -f CMakeFiles\Makefile2 tests/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point\cmake-build-debug && $(MAKE) -f CMakeFiles\Makefile2 tests/preinstall
+	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\cmake-build-debug && $(MAKE) -f CMakeFiles\Makefile2 tests/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point\cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 tests/CMakeFiles/tests.dir/rule:
-	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point\cmake-build-debug && $(MAKE) -f CMakeFiles\Makefile2 tests/CMakeFiles/tests.dir/rule
+	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\cmake-build-debug && $(MAKE) -f CMakeFiles\Makefile2 tests/CMakeFiles/tests.dir/rule
 .PHONY : tests/CMakeFiles/tests.dir/rule
 
 # Convenience name for target.
@@ -121,7 +121,7 @@ tests: tests/CMakeFiles/tests.dir/rule
 
 # fast build rule for target.
 tests/fast:
-	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point\cmake-build-debug && $(MAKE) -f tests\CMakeFiles\tests.dir\build.make tests/CMakeFiles/tests.dir/build
+	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\cmake-build-debug && $(MAKE) -f tests\CMakeFiles\tests.dir\build.make tests/CMakeFiles/tests.dir/build
 .PHONY : tests/fast
 
 __/src/xipoint.obj: __/src/xipoint.cpp.obj
@@ -130,7 +130,7 @@ __/src/xipoint.obj: __/src/xipoint.cpp.obj
 
 # target to build an object file
 __/src/xipoint.cpp.obj:
-	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point\cmake-build-debug && $(MAKE) -f tests\CMakeFiles\tests.dir\build.make tests/CMakeFiles/tests.dir/__/src/xipoint.cpp.obj
+	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\cmake-build-debug && $(MAKE) -f tests\CMakeFiles\tests.dir\build.make tests/CMakeFiles/tests.dir/__/src/xipoint.cpp.obj
 .PHONY : __/src/xipoint.cpp.obj
 
 __/src/xipoint.i: __/src/xipoint.cpp.i
@@ -139,7 +139,7 @@ __/src/xipoint.i: __/src/xipoint.cpp.i
 
 # target to preprocess a source file
 __/src/xipoint.cpp.i:
-	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point\cmake-build-debug && $(MAKE) -f tests\CMakeFiles\tests.dir\build.make tests/CMakeFiles/tests.dir/__/src/xipoint.cpp.i
+	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\cmake-build-debug && $(MAKE) -f tests\CMakeFiles\tests.dir\build.make tests/CMakeFiles/tests.dir/__/src/xipoint.cpp.i
 .PHONY : __/src/xipoint.cpp.i
 
 __/src/xipoint.s: __/src/xipoint.cpp.s
@@ -148,7 +148,7 @@ __/src/xipoint.s: __/src/xipoint.cpp.s
 
 # target to generate assembly for a file
 __/src/xipoint.cpp.s:
-	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point\cmake-build-debug && $(MAKE) -f tests\CMakeFiles\tests.dir\build.make tests/CMakeFiles/tests.dir/__/src/xipoint.cpp.s
+	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\cmake-build-debug && $(MAKE) -f tests\CMakeFiles\tests.dir\build.make tests/CMakeFiles/tests.dir/__/src/xipoint.cpp.s
 .PHONY : __/src/xipoint.cpp.s
 
 gtest/gtest-all.obj: gtest/gtest-all.cc.obj
@@ -157,7 +157,7 @@ gtest/gtest-all.obj: gtest/gtest-all.cc.obj
 
 # target to build an object file
 gtest/gtest-all.cc.obj:
-	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point\cmake-build-debug && $(MAKE) -f tests\CMakeFiles\tests.dir\build.make tests/CMakeFiles/tests.dir/gtest/gtest-all.cc.obj
+	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\cmake-build-debug && $(MAKE) -f tests\CMakeFiles\tests.dir\build.make tests/CMakeFiles/tests.dir/gtest/gtest-all.cc.obj
 .PHONY : gtest/gtest-all.cc.obj
 
 gtest/gtest-all.i: gtest/gtest-all.cc.i
@@ -166,7 +166,7 @@ gtest/gtest-all.i: gtest/gtest-all.cc.i
 
 # target to preprocess a source file
 gtest/gtest-all.cc.i:
-	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point\cmake-build-debug && $(MAKE) -f tests\CMakeFiles\tests.dir\build.make tests/CMakeFiles/tests.dir/gtest/gtest-all.cc.i
+	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\cmake-build-debug && $(MAKE) -f tests\CMakeFiles\tests.dir\build.make tests/CMakeFiles/tests.dir/gtest/gtest-all.cc.i
 .PHONY : gtest/gtest-all.cc.i
 
 gtest/gtest-all.s: gtest/gtest-all.cc.s
@@ -175,7 +175,7 @@ gtest/gtest-all.s: gtest/gtest-all.cc.s
 
 # target to generate assembly for a file
 gtest/gtest-all.cc.s:
-	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point\cmake-build-debug && $(MAKE) -f tests\CMakeFiles\tests.dir\build.make tests/CMakeFiles/tests.dir/gtest/gtest-all.cc.s
+	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\cmake-build-debug && $(MAKE) -f tests\CMakeFiles\tests.dir\build.make tests/CMakeFiles/tests.dir/gtest/gtest-all.cc.s
 .PHONY : gtest/gtest-all.cc.s
 
 gtest/gtest_main.obj: gtest/gtest_main.cc.obj
@@ -184,7 +184,7 @@ gtest/gtest_main.obj: gtest/gtest_main.cc.obj
 
 # target to build an object file
 gtest/gtest_main.cc.obj:
-	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point\cmake-build-debug && $(MAKE) -f tests\CMakeFiles\tests.dir\build.make tests/CMakeFiles/tests.dir/gtest/gtest_main.cc.obj
+	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\cmake-build-debug && $(MAKE) -f tests\CMakeFiles\tests.dir\build.make tests/CMakeFiles/tests.dir/gtest/gtest_main.cc.obj
 .PHONY : gtest/gtest_main.cc.obj
 
 gtest/gtest_main.i: gtest/gtest_main.cc.i
@@ -193,7 +193,7 @@ gtest/gtest_main.i: gtest/gtest_main.cc.i
 
 # target to preprocess a source file
 gtest/gtest_main.cc.i:
-	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point\cmake-build-debug && $(MAKE) -f tests\CMakeFiles\tests.dir\build.make tests/CMakeFiles/tests.dir/gtest/gtest_main.cc.i
+	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\cmake-build-debug && $(MAKE) -f tests\CMakeFiles\tests.dir\build.make tests/CMakeFiles/tests.dir/gtest/gtest_main.cc.i
 .PHONY : gtest/gtest_main.cc.i
 
 gtest/gtest_main.s: gtest/gtest_main.cc.s
@@ -202,7 +202,7 @@ gtest/gtest_main.s: gtest/gtest_main.cc.s
 
 # target to generate assembly for a file
 gtest/gtest_main.cc.s:
-	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point\cmake-build-debug && $(MAKE) -f tests\CMakeFiles\tests.dir\build.make tests/CMakeFiles/tests.dir/gtest/gtest_main.cc.s
+	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\cmake-build-debug && $(MAKE) -f tests\CMakeFiles\tests.dir\build.make tests/CMakeFiles/tests.dir/gtest/gtest_main.cc.s
 .PHONY : gtest/gtest_main.cc.s
 
 point_array_test.obj: point_array_test.cpp.obj
@@ -211,7 +211,7 @@ point_array_test.obj: point_array_test.cpp.obj
 
 # target to build an object file
 point_array_test.cpp.obj:
-	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point\cmake-build-debug && $(MAKE) -f tests\CMakeFiles\tests.dir\build.make tests/CMakeFiles/tests.dir/point_array_test.cpp.obj
+	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\cmake-build-debug && $(MAKE) -f tests\CMakeFiles\tests.dir\build.make tests/CMakeFiles/tests.dir/point_array_test.cpp.obj
 .PHONY : point_array_test.cpp.obj
 
 point_array_test.i: point_array_test.cpp.i
@@ -220,7 +220,7 @@ point_array_test.i: point_array_test.cpp.i
 
 # target to preprocess a source file
 point_array_test.cpp.i:
-	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point\cmake-build-debug && $(MAKE) -f tests\CMakeFiles\tests.dir\build.make tests/CMakeFiles/tests.dir/point_array_test.cpp.i
+	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\cmake-build-debug && $(MAKE) -f tests\CMakeFiles\tests.dir\build.make tests/CMakeFiles/tests.dir/point_array_test.cpp.i
 .PHONY : point_array_test.cpp.i
 
 point_array_test.s: point_array_test.cpp.s
@@ -229,7 +229,7 @@ point_array_test.s: point_array_test.cpp.s
 
 # target to generate assembly for a file
 point_array_test.cpp.s:
-	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point\cmake-build-debug && $(MAKE) -f tests\CMakeFiles\tests.dir\build.make tests/CMakeFiles/tests.dir/point_array_test.cpp.s
+	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\cmake-build-debug && $(MAKE) -f tests\CMakeFiles\tests.dir\build.make tests/CMakeFiles/tests.dir/point_array_test.cpp.s
 .PHONY : point_array_test.cpp.s
 
 point_test.obj: point_test.cpp.obj
@@ -238,7 +238,7 @@ point_test.obj: point_test.cpp.obj
 
 # target to build an object file
 point_test.cpp.obj:
-	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point\cmake-build-debug && $(MAKE) -f tests\CMakeFiles\tests.dir\build.make tests/CMakeFiles/tests.dir/point_test.cpp.obj
+	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\cmake-build-debug && $(MAKE) -f tests\CMakeFiles\tests.dir\build.make tests/CMakeFiles/tests.dir/point_test.cpp.obj
 .PHONY : point_test.cpp.obj
 
 point_test.i: point_test.cpp.i
@@ -247,7 +247,7 @@ point_test.i: point_test.cpp.i
 
 # target to preprocess a source file
 point_test.cpp.i:
-	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point\cmake-build-debug && $(MAKE) -f tests\CMakeFiles\tests.dir\build.make tests/CMakeFiles/tests.dir/point_test.cpp.i
+	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\cmake-build-debug && $(MAKE) -f tests\CMakeFiles\tests.dir\build.make tests/CMakeFiles/tests.dir/point_test.cpp.i
 .PHONY : point_test.cpp.i
 
 point_test.s: point_test.cpp.s
@@ -256,7 +256,7 @@ point_test.s: point_test.cpp.s
 
 # target to generate assembly for a file
 point_test.cpp.s:
-	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point\cmake-build-debug && $(MAKE) -f tests\CMakeFiles\tests.dir\build.make tests/CMakeFiles/tests.dir/point_test.cpp.s
+	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\cmake-build-debug && $(MAKE) -f tests\CMakeFiles\tests.dir\build.make tests/CMakeFiles/tests.dir/point_test.cpp.s
 .PHONY : point_test.cpp.s
 
 # Help Target
@@ -294,6 +294,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point\cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Users\Shurka\Desktop\C++\HSE\task1_point_old\cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
