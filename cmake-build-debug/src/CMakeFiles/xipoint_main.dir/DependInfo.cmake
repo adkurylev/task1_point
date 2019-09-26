@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/Shurka/Desktop/C++/HSE/task1_point/src/main.cpp" "C:/Users/Shurka/Desktop/C++/HSE/task1_point/cmake-build-debug/src/CMakeFiles/xipoint_main.dir/main.cpp.obj"
-  "C:/Users/Shurka/Desktop/C++/HSE/task1_point/src/xipoint.cpp" "C:/Users/Shurka/Desktop/C++/HSE/task1_point/cmake-build-debug/src/CMakeFiles/xipoint_main.dir/xipoint.cpp.obj"
+  "C:/Users/Shurka/Desktop/C++/HSE/task1_point_old/src/main.cpp" "C:/Users/Shurka/Desktop/C++/HSE/task1_point_old/cmake-build-debug/src/CMakeFiles/xipoint_main.dir/main.cpp.obj"
+  "C:/Users/Shurka/Desktop/C++/HSE/task1_point_old/src/xipoint.cpp" "C:/Users/Shurka/Desktop/C++/HSE/task1_point_old/cmake-build-debug/src/CMakeFiles/xipoint_main.dir/xipoint.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

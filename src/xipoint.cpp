@@ -44,7 +44,7 @@ namespace xi
         _y += pt.getY();
     }
 
-    double Point::dist(const Point& other)
+    double Point::dist(const Point& other) const
     {
         return std::sqrt(std::pow(_x - other.getX(), 2)
                          + std::pow(_y - other.getY(), 2));
@@ -159,7 +159,7 @@ namespace xi
         resize(0);
     }
 
-    double PointArray::computePath()
+    double PointArray::computePath() const
     {
         double sum = 0;
 
