@@ -156,7 +156,9 @@ namespace xi
 
     void PointArray::clear()
     {
-        resize(0);
+        delete[] _arr;
+        _arr = nullptr;
+        _size = 0;
     }
 
     double PointArray::computePath() const
